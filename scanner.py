@@ -165,7 +165,10 @@ def find_divergence(
 
             # RSI первого максимума должен быть
             # непосредственно выше уровня overbought.
-            overbought_seen = rsi_a > overbought_rsi
+            overbought_seen = (
+                rsi_a > overbought_rsi
+                and rsi_b > overbought_rsi
+            )
 
             if not overbought_seen:
                 continue
