@@ -314,6 +314,7 @@ class ExchangeScanner:
             except (
                 aiohttp.ClientError,
                 asyncio.TimeoutError,
+                ValueError,
             ):
                 if attempt == 2:
                     raise
