@@ -109,7 +109,7 @@ def find_divergence(
 
     # Второй максимум должен быть свежим:
     # максимум 3 свечи назад.
-    MAX_SIGNAL_AGE = 3
+    MAX_SIGNAL_AGE = 2
 
     candidates = []
 
